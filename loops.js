@@ -11,17 +11,18 @@ function forLoop(array){
   return array
 }
 
-function whileLoop(number){
-  while (number > 0){
-    console.log(--number)
+function whileLoop(n){
+  while (n > 0){
+    console.log(--n)
   }
   return 'done'
 }
-function maybeTrue() {
-  return Math.random() >= 0.5
-}
 
 function doWhileLoop(array){
+  function maybeTrue() {
+    return Math.random() >= 0.5
+  }
+  
   do {
     array.pop()
   } while( array.length > 0 && maybeTrue() )
